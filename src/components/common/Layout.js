@@ -39,7 +39,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <Helmet>
-              <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript" />
+              <script src="../../custom/analytics.js" type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
