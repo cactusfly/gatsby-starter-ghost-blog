@@ -55,11 +55,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             { isHome ?
                                 <div className="site-banner">
                                     <p className="site-banner-desc">{site.description}</p>
-                                    <a style="text-decoration:none !important;" href="https://uilo.com">
-                                      <center>
-                                        <p style="margin-top: 30px; color: #000;font-size:50px; margin-bottom: 0; text-transform: uppercase; transform: rotate(-20deg) skew(-20deg); background-color: transparent; font-family: 'Gill Sans MT', MyGillSans !important; font-weight:bold;"><span style="line-height:1.25; margin-bottom: 0;background-color: white; color: black; position:relative; z-index:9999; text-align:center;">UILO</span><br>  
-                                      </center>
-                                    </a>
+                                    <center><a style="text-decoration:none !important;" href="/"><p style="margin-top: 30px; color: #000;font-size:50px; margin-bottom: 0; text-transform: uppercase; transform: rotate(-20deg) skew(-20deg); background-color: transparent; font-weight:bold;"><span style="line-height:1.25; margin-bottom: 0;background-color: white; color: black; position:relative; z-index:9999; text-align:center;">UILO</span><br /><p class="em-zap"></p></a></center> </center>
                                 </div> :
                                 null}
                             <nav className="site-nav">
