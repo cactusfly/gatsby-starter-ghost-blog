@@ -30,6 +30,15 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />
+
+                <script
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                            var name = 'world';
+                            console.log('Hello ' + name);
+                        `,
+                  }}
+                />
                 <body className={bodyClass} />
             </Helmet>
 
