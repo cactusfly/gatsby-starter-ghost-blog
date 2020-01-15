@@ -6,6 +6,7 @@ import Img from 'gatsby-image'
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
+import config2 from '../../common/analytics'
 
 // Styles
 import '../../styles/app.css'
@@ -39,7 +40,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <Helmet>
-                <script src="analytics.js" type="text/javascript" />
+                <script src=${config2.siteUrl} type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
