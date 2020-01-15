@@ -35,7 +35,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
-                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(https://res.cloudinary.com/drnm0tx5y/image/fetch/f_webp/${site.cover_image})` } }}>
+                    <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image}/?ref=test)` } }}>
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
