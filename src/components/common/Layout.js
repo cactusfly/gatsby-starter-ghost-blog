@@ -40,7 +40,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <Helmet>
-                <script src="../../custom/analytics.js" type="text/javascript" />
+                <script src="https://res.cloudinary.com/dajwfihdi/raw/upload/v1579115527/test_ilurfw.js" type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
