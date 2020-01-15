@@ -38,11 +38,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
             
 
-            <Helmet 
-              script={[{ 
-                type: 'text/javascript', 
-                innerHTML: 'alert("I am an alert box!");' 
-              }]} />
+
+
+            <Helmet
+                script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579125354/script1_w5x8av.js", "type": "text/javascript"} ]}
+            />
                 
             <div className="viewport">
 
