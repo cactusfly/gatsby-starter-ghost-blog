@@ -11,24 +11,6 @@ import config from '../../utils/siteConfig'
 import '../../styles/app.css'
 
 
-class App extends Component {
-  componentDidMount() {
-    const script = document.createElement("script");
-    script.async = true;
-    script.src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js";
-    this.div.appendChild(script);
-  }
-  render() {
-    return (
-      <div className="App" ref={el => (this.div = el)}>
-        <h1>Hello react</h1>
-        {/* Script is inserted here */}
-      </div>
-    );
-  }
-}
-
-export default App;
 
 
 /**
@@ -52,14 +34,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />
 
-                <script
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                            alert("Hello! I am an alert box!!");
-                        `,
-                  }}
-                />
+                
                 <body className={bodyClass} />
+            </Helmet>
+
+            <Helmet>
+              <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js" type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
