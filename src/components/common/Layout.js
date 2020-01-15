@@ -66,6 +66,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     <Navigation data={site.navigation} navClass="site-nav-item" />
                                 </div>
                                 <div className="site-nav-right">
+                                    
+                                    <div id="blog-uilo-search" style={{fontSize: '1.2em !important'}} className="input-drop"> <input type="text" placeholder="Search..." /> <ul /> </div>
                                     <Link className="site-nav-button" to="/about">About</Link>
                                 </div>
                             </nav>
