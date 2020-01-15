@@ -34,8 +34,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <script
                   dangerouslySetInnerHTML={{
                     __html: `
-                            var name = 'world';
-                            console.log('Hello ' + name);
+                            alert("Hello! I am an alert box!!");
                         `,
                   }}
                 />
