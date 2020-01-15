@@ -55,7 +55,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             { isHome ?
                                 <div className="site-banner">
                                     <p className="site-banner-desc">{site.description}</p>
-                                    <p><a style="text-decoration:none;" to="/"><span>UILO</span></a></p>
+                                    <p><a style={{ { backgroundImage: `url(${site.cover_image})` } }} to="/"><span>UILO</span></a></p>
                                 </div> :
                                 null}
                             <nav className="site-nav">
