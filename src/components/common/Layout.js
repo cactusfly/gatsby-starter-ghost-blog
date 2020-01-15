@@ -41,7 +41,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <Helmet 
               script={[{ 
                 type: 'text/javascript', 
-                innerHTML: 'document.getElementById("site-banner-title").innerHTML = Date();' 
+                innerHTML: 'document.getElementsByClassName("site-banner-title").innerHTML = Date();' 
               }]} />
                 
             <div className="viewport">
