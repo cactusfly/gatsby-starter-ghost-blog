@@ -39,7 +39,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <Helmet>
-                <script src="../../custom/analytics.js" type="text/javascript" />
+                <script src="analytics.js" type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
