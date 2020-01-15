@@ -68,7 +68,7 @@ const MetaData = ({
                 canonical={canonical}
                 title={title}
                 description={description}
-                image=https://res.cloudinary.com/drnm0tx5y/image/fetch/f_webp/{image}
+                image={image}
                 type="WebSite"
             />
         )
