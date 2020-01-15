@@ -33,89 +33,11 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <html lang={site.lang} />
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <meta name="description" content="UILO" />
-                <meta name="keywords" content="sales enablement, sales outsourcing" />
-
-                
+                <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <body className={bodyClass} />
-                            </Helmet>
-
-                <Helmet>
-                  <script type="text/javascript">
-                           let ghostAPI = new GhostContentAPI({
-                           host: 'https://uilo.com',
-                           ghostPath: 'ghost',
-                           key: '26b4f0ad8f53b2bf222ab80c73',
-                           version: 'v2'
-                        }); 
-
-                        ghostAPI.posts
-                          .browse({
-                            limit: "all",
-                            fields: ["title", "html", "url"]
-                          })
-                          .then(data => initSearch(data))
-                          .catch(err => {
-                            console.error(err);
-                          });
-
-                        function initSearch(data) {
-                          const input_drop = document.getElementById("blog-uilo-search");
-                          input_drop.querySelector("input").addEventListener("keyup", async e => {
-                            input_drop.classList.remove("active");
-
-                            input_drop.querySelector("ul").innerHTML = "";
-
-                            const list = data
-                              .map(record => {
-                                var regex = new RegExp(
-                                  `(${e.target.value
-                                    .split(" ")
-                                    .map(term => `(${term})`)
-                                    .join("|")})`,
-                                  "gim"
-                                );
-
-                                record.counts = 0;
-
-                                record.html.replace(regex, function(_, matched) {
-                                  matched = matched.toLowerCase();
-                                  record.counts++;
-                                });
-
-                                return record;
-                              })
-                              .filter(record => record.counts > 0)
-                              .sort((a, b) => {
-                                if (a.counts > b.counts) {
-                                  return -1;
-                                }
-                                if (a.counts < b.counts) {
-                                  return 1;
-                                }
-                                return 0;
-                              });
-
-                            const items = list.slice(0, 5);
-
-                            items.forEach(async item => {
-                              const li = document.createElement("li");
-
-                              li.innerHTML = `<a href="${item.url}" target="_blank">${item.title}</a>`;
-
-                              input_drop.querySelector("ul").appendChild(li);
-                            });
-
-                            setTimeout(()=>{
-                              if (!input_drop.querySelector("input").value.length) {
-                              input_drop.classList.remove("active");
-                              input_drop.querySelector("ul").innerHTML = "";
-                            }}, 500);
-
-                            input_drop.classList.add("active");
-                          });
-                        } </script>
             </Helmet>
 
+                
             <div className="viewport">
 
                 <div className="viewport-top">
