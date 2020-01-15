@@ -38,7 +38,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
             
             <Helmet>
-                <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style={{width: '300px'}} />
+                <script src='../../custom/test.js' type="text/javascript" />
             </Helmet>
                 
             <div className="viewport">
@@ -63,7 +63,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </div>
                             { isHome ?
                                 <div className="site-banner">
-                                    {/* <h1 className="site-banner-title">{site.title}</h1> */}
+                                    <h1 className="site-banner-title">{site.title}</h1>
                                     <center><a style={{textDecoration: 'none !important'}} href="/"><p style={{marginTop: '30px', color: '#000', fontSize: '50px', marginBottom: 0, textTransform: 'uppercase', transform: 'rotate(-20deg) skew(-20deg)', backgroundColor: 'transparent', fontFamily: '"Gill Sans MT", MyGillSans !important', fontWeight: 'bold'}}><span style={{lineHeight: '1.25', marginBottom: 0, backgroundColor: 'white', color: 'black', position: 'relative', zIndex: 9999, textAlign: 'center'}}>UILO</span><br /></p><p className="em-zap" /></a></center>
                                     {/* <p className="site-banner-desc">{site.description}</p> */}
                                     <div style={{fontSize: '1.25em', textTransform: 'uppercase', fontFamily: '"Gill Sans MT", "MyGillSans" !important', marginRight: '0px', fontWeight: 'normal', letterSpacing: '2.25px', color: 'slategrey !important'}} id="changeText" />
