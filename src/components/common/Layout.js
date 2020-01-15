@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 
 import { Navigation } from '.'
 import config from '../../utils/siteConfig'
-import config2 from '../../common/analytics'
+import config2 from '../../custom/analytics'
 
 // Styles
 import '../../styles/app.css'
