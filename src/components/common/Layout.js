@@ -41,7 +41,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
 
             <Helmet
-                script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579125354/script1_w5x8av.js", "type": "text/javascript"} ]}
+                { isHome ?
+                    script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579132709/script2_jl8bkw.js", "type": "text/javascript"} ]}
+                : null} 
             />
                 
             <div className="viewport">
