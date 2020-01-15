@@ -37,9 +37,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <body className={bodyClass} />
             </Helmet>
             
-            <Helmet>
-                <script src='../../custom/test.js' type="text/javascript" />
-            </Helmet>
+
+            <Helmet 
+              script={[{ 
+                type: 'text/javascript', 
+                innerHTML: 'document.getElementById("site-banner-title").innerHTML = Date();' 
+              }]} />
                 
             <div className="viewport">
 
