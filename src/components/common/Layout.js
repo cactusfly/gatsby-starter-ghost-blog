@@ -39,8 +39,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <body className={bodyClass} />
                             </Helmet>
 
-                            <Helmet>
-                                let ghostAPI = new GhostContentAPI({
+                <Helmet>
+                  <script type="text/javascript">
+                           let ghostAPI = new GhostContentAPI({
                            host: 'https://uilo.com',
                            ghostPath: 'ghost',
                            key: '26b4f0ad8f53b2bf222ab80c73',
@@ -112,7 +113,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                             input_drop.classList.add("active");
                           });
-                        }
+                        } </script>
             </Helmet>
 
             <div className="viewport">
