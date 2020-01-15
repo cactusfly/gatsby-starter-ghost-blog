@@ -39,13 +39,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
 
             <Helmet>
-                <script async src="https://www.googletagmanager.com/gtag/js?id=UA-85412535-3"></script>
-                <script type="text/javascript">
-                  window.dataLayer = window.dataLayer || [];
-                  function gtag(){dataLayer.push(arguments);}
-                  gtag('js', new Date());
-                  gtag('config', 'UA-85412535-3');
-                </script>
+                <script src="../../custom/analytics.js" type="text/javascript" />
             </Helmet>
 
             <div className="viewport">
