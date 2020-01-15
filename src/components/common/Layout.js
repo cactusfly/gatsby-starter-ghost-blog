@@ -36,7 +36,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <body className={bodyClass} />
             </Helmet>
-
+            
+            <Helmet>
+                <img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain" style={{width: '300px'}} />
+            </Helmet>
                 
             <div className="viewport">
 
