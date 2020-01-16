@@ -32,6 +32,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
+                <base href="/">
                 <body className={bodyClass} />
             </Helmet>
             <Helmet link={[{"href": "2019_custom.css", "type": "text/css", "rel": "stylesheet" } ]}  />
