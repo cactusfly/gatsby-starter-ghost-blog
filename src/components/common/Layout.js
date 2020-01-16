@@ -33,12 +33,12 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-                <body className={bodyClass} />
+                <body className={bodyClass} home-template />
             </Helmet>
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             { isHome ? <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579144049/script3_pgv4o2.js", "type": "text/javascript"} ]} />  : null} 
             
-           <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579162734/test_haioeg.js", "type": "text/javascript"} ]} /> 
+           <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579163218/test2_kvhdcw.js", "type": "text/javascript"} ]} /> 
 
             <div className="viewport">
 
