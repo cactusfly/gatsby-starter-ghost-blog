@@ -58,7 +58,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                 </div>
                             </div>
                             { isHome ?
-                                <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579166023/script4_ucqiwk.js", "type": "text/javascript"} ]} /> 
+                                <script> alert('Yay!'); </script>
                                 <div className="site-banner">
                                     {/* <h1 className="site-banner-title">{site.title}</h1> */}
                                     <center><a style={{textDecoration: 'none !important'}} href="/"><p style={{marginTop: '30px', color: '#000', fontSize: '50px', marginBottom: 0, textTransform: 'uppercase', transform: 'rotate(-20deg) skew(-20deg)', backgroundColor: 'transparent', fontWeight: 'bold'}}><span style={{lineHeight: '1.25', marginBottom: 0, backgroundColor: 'white', color: 'black', position: 'relative', zIndex: 9999, textAlign: 'center'}}>UILO</span><br /></p><p className="em-zap" /></a></center> <br />
