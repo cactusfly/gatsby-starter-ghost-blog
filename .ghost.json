@@ -1,10 +1,10 @@
 {
   "development": {
-    "apiUrl": "http://142.93.221.97",
-    "contentApiKey": "d63a928ceacc26ef57e7e5880d"
+    "apiUrl": "https://buzz.uilo.com",
+    "contentApiKey": "71d97f90f4fd0c4533e31d4ba3"
   },
   "production": {
-    "apiUrl": "http://142.93.221.97",
-    "contentApiKey": "d63a928ceacc26ef57e7e5880d"
+    "apiUrl": "https://buzz.uilo.com",
+    "contentApiKey": "71d97f90f4fd0c4533e31d4ba3"
   }
 }
