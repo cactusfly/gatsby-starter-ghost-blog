@@ -10,7 +10,7 @@ import config from '../../utils/siteConfig'
 
 // Styles
 import '../../styles/app.css'
-
+import 'https://res.cloudinary.com/dajwfihdi/raw/upload/v1579133287/2019_custom_hynoxi.css'
 
 
 
