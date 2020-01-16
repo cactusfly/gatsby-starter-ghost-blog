@@ -34,9 +34,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <body className={bodyClass} />
             </Helmet>
-            <Helmet>
-                link={[{"rel": "stylesheet", "type": "text/css", "href": "https://res.cloudinary.com/dw4k14rp7/raw/upload/v1552750219/emoji.css" }]}
-            </Helmet>
+            <Helmet link={[{"rel": "stylesheet", "type": "text/css", "href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579133287/2019_custom_hynoxi.css" } ]}  />
             { isHome ?
             <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579132709/script2_jl8bkw.js", "type": "text/javascript"} ]} /> 
             : null} 
