@@ -10,8 +10,6 @@ import config from '../../utils/siteConfig'
 
 // Styles
 import '../../styles/app.css'
-import 'https://res.cloudinary.com/dajwfihdi/raw/upload/v1579133287/2019_custom_hynoxi.css'
-
 
 
 /**
@@ -34,6 +32,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <style type="text/css">{`${site.codeinjection_styles}`}</style>
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
+                <link href="https://res.cloudinary.com/dw4k14rp7/raw/upload/v1552750219/emoji.css" rel="stylesheet">
                 <body className={bodyClass} />
             </Helmet>
           
