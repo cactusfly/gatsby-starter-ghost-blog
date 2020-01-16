@@ -35,7 +35,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <body className={bodyClass} />
             </Helmet>
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
-            { isHome ? <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579132709/script2_jl8bkw.js", "type": "text/javascript"} ]} />  : null} 
+            { isHome ? <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579144049/script3_pgv4o2.js", "type": "text/javascript"} ]} />  : null} 
             
             <div className="viewport">
 
