@@ -36,6 +36,14 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             
+            <Helmet script
+                  dangerouslySetInnerHTML={{
+                    __html: `
+                            var name = 'world';
+                            console.log('Hello ' + name);
+                        `,
+                  }}
+                />
             <div className="viewport">
 
                 <div className="viewport-top">
