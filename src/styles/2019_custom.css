@@ -499,9 +499,7 @@ input {
     display: contents;
 }
 
-.post-card-image {
-    background: transparent !important;
-}
+/*--- .post-card-image { background: transparent !important; } --/
    
 /*----- 2019X-------*/
 .post-full-custom-excerpt {
