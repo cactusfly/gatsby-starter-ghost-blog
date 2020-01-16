@@ -10,6 +10,7 @@ import config from '../../utils/siteConfig'
 
 // Styles
 import '../../styles/app.css'
+import { homePageOnly } from '../../custom/c2';
 
 
 /**
