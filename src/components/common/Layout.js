@@ -42,6 +42,17 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <div className="viewport-top">
                     {/* The main header section on top of the screen */}
                     <header className="site-head" style={{ ...site.cover_image && { backgroundImage: `url(${site.cover_image})` } }}>
+
+                       
+                    {% if page.url == "/" %}
+                    <style header {background-color: transparent !important; } />
+                    <video id="video" style="width:100% !important; margin-top:-180px !important; z-index:-9999 !important; " muted="" autoplay="" loop="">
+                    <source src="https://res.cloudinary.com/madrasbox/video/upload/v1578579174/y2mate.com_-_filmmaking_showreel_sampath_kumar_r_a_ud0hUKASi7k_1080p_hsoarc_yxou54.mp4" type="video/mp4">
+                    </video>
+                    {% endif %}
+
+
+
                         <div className="container">
                             <div className="site-mast">
                                 <div className="site-mast-left">
