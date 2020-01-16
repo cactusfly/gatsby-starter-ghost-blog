@@ -34,7 +34,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <body className={bodyClass} />
             </Helmet>
-            <Helment link={[{"href": "/2019_custom.css", "type": "text/css", "rel": "stylesheet" } ]}  />
+            <Helmet link={[{"href": "/2019_custom.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             { isHome ?
             <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579132709/script2_jl8bkw.js", "type": "text/javascript"} ]} /> 
             : null} 
