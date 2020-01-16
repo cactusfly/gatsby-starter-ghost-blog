@@ -36,13 +36,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             
-            <Helmet script
-                  dangerouslySetInnerHTML={{
-                    __html: `
-                            alert('works!')
-                        `,
-                  }}
-                />
+            
             <div className="viewport">
 
                 <div className="viewport-top">
@@ -66,6 +60,13 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             { isHome ?
                                
                                <div className="site-banner">
+                                    <script
+                                      dangerouslySetInnerHTML={{
+                                        __html: `
+                                                alert('works2!')
+                                            `,
+                                      }}
+                                    />
                                     {/* <h1 className="site-banner-title">{site.title}</h1> */}
                                     <center><a style={{textDecoration: 'none !important'}} href="/"><p style={{marginTop: '30px', color: '#000', fontSize: '50px', marginBottom: 0, textTransform: 'uppercase', transform: 'rotate(-20deg) skew(-20deg)', backgroundColor: 'transparent', fontWeight: 'bold'}}><span style={{lineHeight: '1.25', marginBottom: 0, backgroundColor: 'white', color: 'black', position: 'relative', zIndex: 9999, textAlign: 'center'}}>UILO</span><br /></p><p className="em-zap" /></a></center> <br />
                                     {/* <p className="site-banner-desc">{site.description}</p> */}
