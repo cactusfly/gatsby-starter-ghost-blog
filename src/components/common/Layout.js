@@ -39,8 +39,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <Helmet script
                   dangerouslySetInnerHTML={{
                     __html: `
-                            var name = 'world';
-                            console.log('Hello ' + name);
+                            alert('works!')
                         `,
                   }}
                 />
