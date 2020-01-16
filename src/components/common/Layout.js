@@ -37,8 +37,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             </Helmet>
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             
-            <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579163218/test2_kvhdcw.js", "type": "text/javascript"} ]} /> 
-
+            <Helmet>
+                <script> alert(window.location.pathname); </script>
+            </Helmet>
             <div className="viewport">
 
                 <div className="viewport-top">
