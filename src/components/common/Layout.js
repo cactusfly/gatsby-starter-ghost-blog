@@ -38,6 +38,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
             <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
             { isHome ? <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579144049/script3_pgv4o2.js", "type": "text/javascript"} ]} />  : null} 
             
+           <Helmet script={[{"src": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579162734/test_haioeg.js", "type": "text/javascript"} ]} /> 
+
             <div className="viewport">
 
                 <div className="viewport-top">
