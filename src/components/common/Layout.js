@@ -60,15 +60,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             </div>
                             { isHome ?
                                
-                                <script
-                                  dangerouslySetInnerHTML={{
-                                    __html: `
-                                        <video id="video" style="width:100% !important; margin-top:0px !important; z-index:-9999 !important; " muted="" autoplay="" loop="">
-                                        <source src="https://res.cloudinary.com/madrasbox/video/upload/v1578579174/y2mate.com_-_filmmaking_showreel_sampath_kumar_r_a_ud0hUKASi7k_1080p_hsoarc_yxou54.mp4" type="video/mp4">
-                                        </video>
-                                        `,
-                                  }}
-                                />
+                            
                                <div className="site-banner">
                                     <script
                                       dangerouslySetInnerHTML={{
@@ -84,6 +76,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                             `,
                                       }}
                                     />
+    
                                     {/* <h1 className="site-banner-title">{site.title}</h1> */}
                                     <center><a style={{textDecoration: 'none !important'}} href="/"><p style={{marginTop: '30px', color: '#000', fontSize: '50px', marginBottom: 0, textTransform: 'uppercase', transform: 'rotate(-20deg) skew(-20deg)', backgroundColor: 'transparent', fontWeight: 'bold'}}><span style={{lineHeight: '1.25', marginBottom: 0, backgroundColor: 'white', color: 'black', position: 'relative', zIndex: 9999, textAlign: 'center'}}>UILO</span><br /></p><p className="em-zap" /></a></center> <br />
                                     {/* <p className="site-banner-desc">{site.description}</p> */}
