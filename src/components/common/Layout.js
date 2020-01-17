@@ -66,7 +66,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    { isHome ? <div id="blog-uilo-search" style="fontSize:'1.2em !important'; text-overflow: ellipsis !important; padding-left: 5px !important; padding-right: 5px !important; border: 0.25px solid #ccc; color: darkgrey; overflow: hidden;" className="input-drop"> <input type="text" placeholder="Search..." /> <ul /> </div>  : null }
+                                    { isHome ? <div id="blog-uilo-search" style={{textOverflow: 'ellipsis !important', paddingLeft: '5px !important', paddingRight: '5px !important', border: '0.25px solid #ccc', color: 'darkgrey', overflow: 'hidden', fontSize:'1.2em !important'}} className="input-drop"> <input type="text" placeholder="Search..." /> <ul></ul> </div>  : null }
                                  </div>
                             </div>
                             { isHome ?
