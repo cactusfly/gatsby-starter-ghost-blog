@@ -52,7 +52,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                             }
                             function homePageOnly() { var inst = setInterval(change, Math.floor(Math.random() * 2000) + 5000); }
                             if(window.location.pathname == "/"){ homePageOnly(); }
-                            alert(window.location.pathname);
                             `, }} />
 
 
