@@ -44,21 +44,23 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
                     
 
-
-
+                    
                             <script
                               dangerouslySetInnerHTML={{
                                 __html: `
-                            function change() {
-                                var elem = document.getElementById("changeText");
+                            function changeX() {
+                                var elem = document.getElementById("changeText")[0];
                                 var myArray = ["Outsourced Sales Development", "Fractional Sales Leadership", "Sales Development Consulting", "Sales Enablement Consulting", "Sales Training", "Enterprise Selling", "Big Ticket Sales Coaching", "Sales Assessments", "Sales Management Training", "Sales Alignment", "Growth Consulting", "Hiring for Sales", "Leadership Coaching", "Sales Conversations", "Sales Productivity", "Sales Resources", "Business Strategy", "Customer Value Marketing", "Lead Nurturing", "Lead Generation", "Lead Scoring", "Customer Experience", "Real-time Sales Personalization", "Sales Intelligence", "Inbound Marketing", "CX Lifecycle Management", "Customer Experience!", "Big Data Marketing", "Deep Data Integration", "Analytics Automation", "Transaction Automation", "Marketing Automation", "Multichannel Marketing", "Dynamic Lead Generation", "Sales Automation", "Predictive marketing", "Customer Referrals", "Responsive Sales", "Growth Hacking!", "CRM Integrations", "ERP Integrations", "Sales Development", "Sales Engagement", "Sales Management", "Sales Operations", "Sales Process", "Sales Technology"];
                                 try { elem.innerHTML = myArray[Math.floor(Math.random() * myArray.length)]; } 
-                                catch(err) { location.hash = true ; } 
+                                catch(err) {  } 
                             }
-                            function homePageOnly() { var inst = setInterval(change, Math.floor(Math.random() * 2000) + 5000); }
-                            if(window.location.pathname == '/'){ homePageOnly(); }
-                            if(window.location.pathname =='/' && location.hash ) { alert(window.location.pathname); location.hash = false; }
-                            `, }} />
+                            function homePageOnlyX() { var inst = setInterval(changeX, Math.floor(Math.random() * 2000) + 5000); }
+                            if(window.location.pathname == '/'){ homePageOnlyX(); }
+                            `, }} /> 
+
+
+
+                             { isHome ?:  <script dangerouslySetInnerHTML={{ __html: ` <script> alert('yes'); </script> : null }
 
 
 
