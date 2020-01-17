@@ -66,8 +66,8 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                                     </Link>
                                 </div>
                                 <div className="site-mast-right">
-                                    <div id="blog-uilo-search" style={{fontSize: '1.2em !important'}} className="input-drop"> <input type="text" placeholder="Search..." /> <ul /> </div>
-                                </div>
+                                    { isHome ? <div id="blog-uilo-search" style={{fontSize: '1.2em !important'}} className="input-drop"> <input type="text" placeholder="Search..." /> <ul /> </div> : null }
+                                 </div>
                             </div>
                             { isHome ?
                                <div className="site-banner">                              
