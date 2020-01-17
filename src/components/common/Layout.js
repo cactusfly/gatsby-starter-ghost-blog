@@ -60,10 +60,6 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
 
 
 
-                             { isHome ?:  <script dangerouslySetInnerHTML={{ __html: ` <script> alert('yes'); </script> : null }
-
-
-
 
                         
 
