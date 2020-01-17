@@ -33,12 +33,10 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
                 <body className={bodyClass} />
-                <video autoplay muted loop id="myVideo">
-                  <source src="https://res.cloudinary.com/madrasbox/video/upload/v1578579174/y2mate.com_-_filmmaking_showreel_sampath_kumar_r_a_ud0hUKASi7k_1080p_hsoarc_yxou54.mp4" type="video/mp4">
-                </video> 
             </Helmet>
-
-
+              
+            <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
+                
             <div className="viewport">
 
                 <div className="viewport-top">
