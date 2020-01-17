@@ -1,8 +1,13 @@
 
-.responsive-header-img {
+.site-head {
     background: none !important;
     background-color: #BFEFFF !important;
     background-image: linear-gradient(0deg, #e4feec 12%, #BFEFFF 92%) !important;
+}
+
+.site-banner {
+	font-display: fallback;
+    font-family: 'Gill Sans MT', 'MyGillSans' !important;
 }
     
 .site-description {
@@ -209,7 +214,7 @@ p::selection {
 
 @media only screen and (min-width: 600px) {
     .copyright::after {
-        content: " — OPENBRACE PVT LTD CIN U74999TN2016OPC111192, RoC, CHENNAI";
+        content: " â€” OPENBRACE PVT LTD CIN U74999TN2016OPC111192, RoC, CHENNAI";
     }
 }
 
