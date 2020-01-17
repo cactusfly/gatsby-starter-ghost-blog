@@ -33,6 +33,9 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
                 <body className={bodyClass} />
+                <video autoplay muted loop id="myVideo">
+                  <source src="https://res.cloudinary.com/madrasbox/video/upload/v1578579174/y2mate.com_-_filmmaking_showreel_sampath_kumar_r_a_ud0hUKASi7k_1080p_hsoarc_yxou54.mp4" type="video/mp4">
+                </video> 
             </Helmet>
 
 
