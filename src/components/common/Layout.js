@@ -32,7 +32,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-                <body className="home-template" {bodyClass} />
+                <body className={[bodyClass, "home-template"].join(' ')} />
             </Helmet>           
                 
             <div className="viewport">
