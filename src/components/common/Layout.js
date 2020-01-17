@@ -33,9 +33,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
                 <body className={bodyClass} />
-            </Helmet>
-              
-            <Helmet link={[{"href": "https://res.cloudinary.com/dajwfihdi/raw/upload/v1579142507/2019_custom_ae0gri.css", "type": "text/css", "rel": "stylesheet" } ]}  />
+            </Helmet>           
                 
             <div className="viewport">
 
