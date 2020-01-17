@@ -32,7 +32,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                 <meta name="description" content="UILO" />
                 <meta name="keywords" content="sales enablement, sales outsourcing" />    
                 <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
-                <body className={[bodyClass, "home-template"].join(' ')} />
+                <body className={["home-template",bodyClass].join(' ')} />
             </Helmet>           
                 
             <div className="viewport">
@@ -43,12 +43,7 @@ const DefaultLayout = ({ data, children, bodyClass, isHome }) => {
                     
                     <script dangerouslySetInnerHTML={{
                         __html: `
-                                function change() {
-                                    var myArray = ["Outsourced Sales Development", "Fractional Sales Leadership", "Sales Development Consulting", "Sales Enablement Consulting", "Sales Training", "Enterprise Selling", "Big Ticket Sales Coaching", "Sales Assessments", "Sales Management Training", "Sales Alignment", "Growth Consulting", "Hiring for Sales", "Leadership Coaching", "Sales Conversations", "Sales Productivity", "Sales Resources", "Business Strategy", "Customer Value Marketing", "Lead Nurturing", "Lead Generation", "Lead Scoring", "Customer Experience", "Real-time Sales Personalization", "Sales Intelligence", "Inbound Marketing", "CX Lifecycle Management", "Customer Experience!", "Big Data Marketing", "Deep Data Integration", "Analytics Automation", "Transaction Automation", "Marketing Automation", "Multichannel Marketing", "Dynamic Lead Generation", "Sales Automation", "Predictive marketing", "Customer Referrals", "Responsive Sales", "Growth Hacking!", "CRM Integrations", "ERP Integrations", "Sales Development", "Sales Engagement", "Sales Management", "Sales Operations", "Sales Process", "Sales Technology"];
-                                    document.getElementById("changeText").innerHTML = myArray[Math.floor(Math.random() * myArray.length)];
-                                }
-                                function homePageOnly() { var inst = setInterval(change, Math.floor(Math.random() * 2000) + 5000); }
-                                if (window.location.pathname == "/") { try { homePageOnly(); } catch(err) { alert("ok!"); } }
+                                    <script> alert('ok'); </script>
                                 `,
                             }} />
 
